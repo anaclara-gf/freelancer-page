@@ -21,19 +21,28 @@ import {
   BoldGreyText,
 } from "./styles";
 import { LinkedIn, GitHub } from "@mui/icons-material";
-import { useParams } from "react-router-dom";
-import data from "../../data/freelancers.json";
+import { useNavigate, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useAppSelector } from "../../store/hooks";
 
 function Profile() {
   const { id } = useParams();
-  const freelancer = data.freelancers.find(
-    (freelancer) => freelancer.id === parseInt(id || "")
-  );
+  const [freelancer, setFreelancer] = useState<Freelancer>();
+  const navigate = useNavigate();
+
+  const freelancers = useAppSelector((state) => state.data.freelancers);
+  useEffect(() => {
+    const freelancer = freelancers.find(
+      (freelancer) => freelancer.id === parseInt(id || "")
+    );
+
+    freelancer ? setFreelancer(freelancer) : navigate("/notfound");
+  }, []);
 
   return (
     <Container>
       <Header />
-      {freelancer ? (
+      {freelancer && (
         <Body>
           <BodyContainer>
             <ImageContainer>
@@ -118,8 +127,6 @@ function Profile() {
             </TextContainer>
           </BodyContainer>
         </Body>
-      ) : (
-        <p>Usuário não encontrado</p>
       )}
     </Container>
   );

@@ -3,6 +3,7 @@ import styled from "styled-components";
 const Container = styled.div`
   background-color: lightgrey;
   height: 100%;
+  min-height: 100vh;
 `;
 
 const BodyContainer = styled.div`

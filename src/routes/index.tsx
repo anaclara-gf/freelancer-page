@@ -5,12 +5,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import { Home, Profile } from "../pages";
+import { Home, NotFound, Profile } from "../pages";
 
 const router = createBrowserRouter(
   createRoutesFromElements([
     <Route path="/" element={<Home />} />,
     <Route path="/profile/:id" element={<Profile />} />,
+    <Route path="*" element={<NotFound />} />,
   ])
 );
 

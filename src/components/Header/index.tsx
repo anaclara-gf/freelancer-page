@@ -10,27 +10,45 @@ import {
 } from "./styles";
 import { Search } from "@mui/icons-material";
 import data from "../../data/freelancers.json";
+import { useAppDispatch } from "../../store/hooks";
+import {
+  defineFreelancers,
+  defineSearchInput,
+  resetState,
+} from "../../store/dataSlice";
 
 function Header() {
   const [name, setName] = useState("");
   const navigate = useNavigate();
+  const dispatch = useAppDispatch();
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    const freelancer = data.freelancers.find((freelancer) =>
+    setName("");
+    const freelancers = data.freelancers.filter((freelancer) =>
       freelancer.name.toUpperCase().includes(name.trim().toUpperCase())
     );
 
-    freelancer && navigate(`/profile/${freelancer.id}`);
+    dispatch(defineFreelancers(freelancers));
+    dispatch(defineSearchInput(name));
+    navigate("/");
   };
 
   return (
     <HeaderBackground>
       <HeaderContainer>
-        <Title onClick={() => navigate("/")}>Freelancer</Title>
+        <Title
+          onClick={() => {
+            dispatch(resetState());
+            navigate("/");
+          }}
+        >
+          Freelancer
+        </Title>
         <InputContainer onSubmit={(e) => handleSubmit(e)}>
           <Input
             type="text"
+            value={name}
             placeholder="Buscar freelancers pelo nome"
             onChange={(e) => setName(e.target.value)}
           />

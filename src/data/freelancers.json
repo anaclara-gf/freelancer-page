@@ -1,0 +1,399 @@
+{
+  "freelancers": [
+    {
+      "id": 1,
+      "name": "Ana Clara Garcia Farah",
+      "email": "rm347056@fiap.com.br",
+      "imageURL": "https://media.licdn.com/dms/image/C4E03AQGBo-H160HZoA/profile-displayphoto-shrink_200_200/0/1614349989439?e=1694649600&v=beta&t=R6Jl3-5BwE3E2kEZFzKkRbbLh9WAOZGqL6JgE3Bgqho",
+      "level": "Junior Mobile Developer",
+      "about": "Formada em Arquitetura e Urbanismo, no meio da pandemia fiz transição de carreira para desenvolvimento front-end. Em abril de 2021 concluí o curso da Laboratória Brasil, um bootcamp intensivo de seis meses no qual aprendi as linguagens JavaScript, HTML, CSS, entre outras. Atualmente estou trabalhando com desenvolvimento fullstack com JavaScript/TypeScript. No meu dia-a-dia, utilizo o React.js para o front-end, o React Native para o desenvolvimento mobile híbrido, o NestJS (framework Node.js) para o backend, Jest e React Testing Library para testes unitários, Detox para testes E2E e versionamento com Git. Já trabalhei com Redux, MongoDB, Firebase, Mockserver, Figma, entre outros.",
+      "linkedinURL": "https://www.linkedin.com/in/anaclaragf/",
+      "githubURL": "https://github.com/anaclara-gf",
+      "languages": ["português", "inglês", "francês"],
+      "skills": [
+        "API REST",
+        "Tecnologias da web",
+        "SASS",
+        "Design",
+        "Inteligência emocional",
+        "Detox",
+        "Jest",
+        "Metodologias Agile",
+        "TypeScript",
+        "NestJS",
+        "React Native",
+        "Node.js",
+        "JavaScript",
+        "Firebase"
+      ],
+      "experiences": [
+        {
+          "company": "Avanade",
+          "place": "São Paulo, SP, Brasil",
+          "time": "2 anos e 2 meses",
+          "jobs": [
+            {
+              "level": "Analista Pleno",
+              "from": "set de 2022",
+              "to": "o momento",
+              "summary": "Atualmente estou trabalhando com desenvolvimento fullstack com JavaScript/TypeScript. No meu dia-a-dia, utilizo o React.js para o front-end, o React Native para o desenvolvimento mobile híbrido, o NestJS (framework Node.js) para o backend, Jest e React Testing Library para testes unitários, Detox para testes E2E e versionamento com Git. Já trabalhei com Redux, MongoDB, Firebase, Mockserver, Figma, entre outros."
+            },
+            {
+              "level": "Analista Júnior",
+              "from": "mai de 2021",
+              "to": "set de 2022",
+              "summary": "Desenvolvedora front-end, utilizando JavaScript como linguagem base e React Native como biblioteca de desenvolvimento mobile multiplataforma."
+            }
+          ]
+        },
+        {
+          "company": "SESC SP Serviço Social do Comércio",
+          "place": "São Paulo, SP, Brasil",
+          "time": "6 meses",
+          "jobs": [
+            {
+              "level": "Mediadora da exposição Lasar Segall: ensaio sobre a cor",
+              "from": "out de 2018",
+              "to": "mar de 2019",
+              "summary": "Treinamento e pesquisa em mediação e arte-educação, atendimento de público escolar agendado e de grupos espontâneos de diversas faixas etárias, produção e execução de oficinas para a programação integrada e pesquisa sobre a obra do Lasar Segall (individual e coletiva)."
+            }
+          ]
+        },
+        {
+          "company": "Museu Paulista",
+          "place": "São Paulo, SP, Brasil",
+          "time": "10 meses",
+          "jobs": [
+            {
+              "level": "Estagiário em Museografia e Comunicação Visual",
+              "from": "dez de 2017",
+              "to": "set de 2018",
+              "summary": "Co-responsável pelo design, produção e montagem da exposição 'Itu e seus moradores nas caricaturas de Pery Guarany Blackman' (2018) no Museu Republicano de Itu e pela diagramação dos artigos publicados no volume 26 dos Anais do Museu Paulista. Acompanhamento da montagem da exposição “Território, Edifício, Museu: Trajetórias do Museu Paulista e seu Edifício-Monumento” (2018) no prédio da Reitoria na Cidade Universitária e produção do convite para sua abertura."
+            }
+          ]
+        }
+      ],
+      "academics": [
+        {
+          "institution": "FIAP",
+          "degree": "Pós-graduação Lato Sensu - MBA",
+          "course": "Mobile Development",
+          "from": "set de 2022",
+          "to": "set de 2023"
+        },
+        {
+          "institution": "Laboratoria",
+          "degree": "Bootcamp",
+          "course": "Front-end Development",
+          "from": "out de 2020",
+          "to": "mai de 2021"
+        },
+        {
+          "institution": "Universidade de São Paulo",
+          "degree": "Bacharelado",
+          "course": "Arquitetura e Urbanismo",
+          "from": "fev de 2013",
+          "to": "dez de 2019"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Eduardo Misina",
+      "email": "rm347108@fiap.com.br",
+      "imageURL": "https://media.licdn.com/dms/image/C4D03AQEIgjcjqtTVsw/profile-displayphoto-shrink_200_200/0/1645537087244?e=1694649600&v=beta&t=fMYos7_IGhl2v6KOVWj0CNUjmz9tplIUBWwKtGnql_w",
+      "level": "Android Developer",
+      "about": "Experienced Android Developer with a demonstrated history of working in the Computer Software industry. Skilled in Firebase, Brazilian Portuguese, English, Android Development, and Android Studio. Strong engineering professional graduated from Universidade Estadual Paulista Júlio de Mesquita Filho / UNESP. ",
+      "linkedinURL": "https://www.linkedin.com/in/eduardo-misina-b7073069/",
+      "githubURL": "https://github.com/EduAkMi",
+      "languages": ["português", "inglês"],
+      "skills": [
+        "Android Development",
+        "Firebase",
+        "Android Studio",
+        "Android",
+        "Kotlin",
+        "Java"
+      ],
+      "experiences": [
+        {
+          "company": "Bees Brasil",
+          "place": "São Paulo, SP, Brasil",
+          "time": "1 ano e 2 meses",
+          "jobs": [
+            {
+              "level": "Analista Desenvolvimento Sistemas",
+              "from": "jun de 2022",
+              "to": "o momento",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "company": "SiDi",
+          "place": "São Paulo, SP, Brasil",
+          "time": "1 ano e 9 meses",
+          "jobs": [
+            {
+              "level": "Desenvolvedor de Software",
+              "from": "abr de 2022",
+              "to": "mai de 2022",
+              "summary": ""
+            },
+            {
+              "level": "Junior Software Engineer",
+              "from": "set de 2020",
+              "to": "abr de 2022",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "company": "Digital House Brasil",
+          "place": "São Paulo, SP, Brasil",
+          "time": "1 ano",
+          "jobs": [
+            {
+              "level": "Professor Assistente Mobile Android",
+              "from": "ago de 2020",
+              "to": "jul de 2021",
+              "summary": ""
+            }
+          ]
+        }
+      ],
+      "academics": [
+        {
+          "institution": "FIAP",
+          "degree": "Pós-graduação Lato Sensu - MBA",
+          "course": "Mobile Development",
+          "from": "set de 2022",
+          "to": "set de 2023"
+        },
+        {
+          "institution": "UNESP",
+          "degree": "Bacharelado",
+          "course": "Ciências da Computação",
+          "from": "2013",
+          "to": "2019"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Felipe de Paulo Rodrigues",
+      "email": "rm347228@fiap.com.br",
+      "imageURL": "https://avatars.githubusercontent.com/u/55038612?v=4",
+      "level": "Tech Delivery Specialist / Agility Leader",
+      "about": "Profissional com mais de 18 anos de carreira nas áreas de Tecnologia, Gestão de Projetos, Desenvolvimento de Software e Desenvolvimento de Produtos atuando em grandes empresas de segmentos diversos.\n • Experiência em Governança de TI e Digital, padronizando processos da área;\n• Background no gerenciamento de projetos de agências digitais, órgãos públicos, indústria farmacêutica, varejo, marketplace, instituições financeiras e startups;\n• Liderança em projetos de alta complexidade, utilizando metodologias Ágil, Scrum, Lean e Kaizen, diagnosticando oportunidades e necessidades, apresentando as recomendações para a implementação das melhores soluções para o negócio;\n• Expertise em gestão e desenvolvimento de equipes multidisciplinares;\n• Conhecimento em especificação e implantação de novos produtos;\n• Certificado PMP®, CSM® e ITIL® e afiliado ao PMI® Chapter São Paulo desde janeiro/2007;",
+      "linkedinURL": "https://www.linkedin.com/in/anaclaragf/",
+      "githubURL": "https://github.com/anaclara-gf",
+      "languages": ["português", "inglês"],
+      "skills": [
+        "Metodologias Agile",
+        "Gestão",
+        "Mobile Development",
+        "Scrum",
+        "Agilidade",
+        "Ensino"
+      ],
+      "experiences": [
+        {
+          "company": "GetNinjas",
+          "place": "São Paulo, SP, Brasil",
+          "time": "1 ano e 4 meses",
+          "jobs": [
+            {
+              "level": "Tech Delivery Specialist / Agility Leader",
+              "from": "abr de 2022",
+              "to": "o momento",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "company": "Indra",
+          "place": "São Paulo, SP, Brasil",
+          "time": "8 meses",
+          "jobs": [
+            {
+              "level": "Agile Coach",
+              "from": "ago de 2021",
+              "to": "mar de 2022",
+              "summary": "● Train and mentor the tribe/team in the use and application of the Client Framework;\n● Apply the maturity model together with the Scrum Master in order to evolve the tribe/team in adopting the Client Framework\n● Assist in the continuous evolution of teams, in line with corporate guidelines and rites.\nMain Client: www.santander.com (Brazil Operation)"
+            }
+          ]
+        },
+        {
+          "company": "Stix",
+          "place": "São Paulo, SP, Brasil",
+          "time": "5 meses",
+          "jobs": [
+            {
+              "level": "Scrum Master / Tech Lead",
+              "from": "mar de 2021",
+              "to": "jul de 2021",
+              "summary": "● Technically lead the deliverables developed by the architecture team, to meet the demands originated by the POs, business and architecture teams, serving the entire structure of the company.\nMain Client: Drugstore Chains and Large Retail."
+            }
+          ]
+        },
+        {
+          "company": "InterPlayers",
+          "place": "São Paulo, SP, Brasil",
+          "time": "1 ano e 11 meses",
+          "jobs": [
+            {
+              "level": "Scrum Master / Software and Project Development Coordinator",
+              "from": "mai de 2019",
+              "to": "mar de 2021",
+              "summary": "● Management of the internal development team and the software factory;\n● Scrum Master responsible for projects managed through agile methodologies;\n● Definition of new/improved products and services;\n● Management of software development projects, interfacing internal and external customers with the development area\nMain Client: Pharmaceutical Industries and Drugstore Chains."
+            }
+          ]
+        },
+        {
+          "company": "UNINOVE",
+          "place": "São Paulo, SP, Brasil",
+          "time": "10 anos e 7 meses",
+          "jobs": [
+            {
+              "level": "Professor",
+              "from": "mai de 2009",
+              "to": "nov de 2019",
+              "summary": "● Teaching classes in project management for the course Master in Project Management (Specialization course).\n● Teaching classes in Database, System Analysis and Network for the course IT (Specialization course)."
+            }
+          ]
+        }
+      ],
+      "academics": [
+        {
+          "institution": "FIAP",
+          "degree": "Pós-graduação Lato Sensu - MBA",
+          "course": "Mobile Development",
+          "from": "set de 2022",
+          "to": "set de 2023"
+        },
+        {
+          "institution": "FIAP",
+          "degree": "Pós-graduação Lato Sensu - MBA",
+          "course": "Project Management PMI",
+          "from": "jul de 2006",
+          "to": "nov de 2007"
+        },
+        {
+          "institution": "Insper",
+          "degree": "Specialization",
+          "course": "SOL - Stratagy, Operations and Leadership",
+          "from": "jan de 2012",
+          "to": "dez de 2012"
+        },
+        {
+          "institution": "Universidad Viña del Mar",
+          "degree": "Diplomado",
+          "course": "Project Management",
+          "from": "jan de 2010",
+          "to": "dez de 2010"
+        },
+        {
+          "institution": "UNINOVE",
+          "degree": "Bacharelado",
+          "course": "Ciências da Computação",
+          "from": "jul de 2002",
+          "to": "jul de 2006"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Gabriel Patane Todaro",
+      "email": "rm347392@fiap.com.br",
+      "imageURL": "https://media.licdn.com/dms/image/C5603AQHQgF8B4LLOOQ/profile-displayphoto-shrink_200_200/0/1593546288841?e=1694649600&v=beta&t=1mMUzIBSXDF5S88aqJqNhv5lCUhnxPrpTpLyXvYdnzo",
+      "level": "Senior iOS Developer",
+      "about": "I always got attracted by mobility and flexibility. When smartphones was the next biggest thing on our world, I knew I would work with that somehow. Even though I started a non-related college, it helped me realize what I really wanted to do: I wanted to make persons' lives easier, simpler, and more interesting. Almost 10 years ago I had the privilege to learn from a relative that had a software house in our hometown, who taught me how to 'think different'. It opened some awesome doors to me. After that, I changed my routine from gaming to learning and coding. Started with Android development (using Java back then), moving to iOS (with Objective-C). It has changed my professional and personal life, because I got an amazing opportunity in Hewlett Packard Enterprise as a Mobile Developer. After that, I worked for some startups, some multinational companies, and currently I'm working for an amazing US startup, whose mission is the same as mine: help people and businesses to get more from technology, creating an amazing impact on society, turning complexity into simplicity.",
+      "linkedinURL": "https://www.linkedin.com/in/gabrieltodaro/",
+      "githubURL": "https://github.com/Gabrielgps25",
+      "languages": ["português", "inglês"],
+      "skills": [
+        "UIKit",
+        "Desenvolvimento de iOS",
+        "iOS",
+        "Swift",
+        "Communication",
+        "Creative Content Creation",
+        "Scrum",
+        "GitFlow",
+        "Objective-C",
+        "Metodologias Agile"
+      ],
+      "experiences": [
+        {
+          "company": "Podium",
+          "place": "Lehi, Utah, Estados Unidos",
+          "time": "1 ano e 1 mês",
+          "jobs": [
+            {
+              "level": "iOS Engineer",
+              "from": "jul de 2022",
+              "to": "o momento",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "company": "CI&T",
+          "place": "Campinas, SP, Brasil",
+          "time": "3 anos e 1 mês",
+          "jobs": [
+            {
+              "level": "Senior iOS Developer",
+              "from": "jul de 2019",
+              "to": "jul de 2022",
+              "summary": "As part of an Ab-Inbev development team, I was able to create new modules to attach in the B2B app (BEES), using first Carthage then Cocoa Pods to implement those. We are migrating those modules to SPM;\nUsage of Unit Test and UI Tests with XCTest, XCUITest, and Appium for automated tests;\nUsage of Firebase Remote Config for feature flag control; \nUsage of Optimizely for both AB Test and Feature Flag control;\nUsage both Auto Layout and View Code for layout implementations;\nMVVM with Coordinator as project architecture; "
+            }
+          ]
+        },
+        {
+          "company": "PerformaIT Solutions",
+          "place": "Campinas, SP, Brasil",
+          "time": "7 meses",
+          "jobs": [
+            {
+              "level": "iOS Developer",
+              "from": "dez de 2018",
+              "to": "jun de 2019",
+              "summary": "I was hired by PerformaIT to work as an iOS developer on a market known project which the company is sponsor: Appito.\nThere, I could perform the following tasks:\n1. Develop new features;\n2. Find and solve production bugs;\n3. Seek ways to improve the app and its external libraries;\n4. Perform all tasks to publish it on Test Flight and App Store."
+            }
+          ]
+        },
+        {
+          "company": "5by5 Soluções em Sistemas",
+          "place": "Araraquara, SP, Brasil",
+          "time": "5 meses",
+          "jobs": [
+            {
+              "level": "iOS Developer",
+              "from": "ago de 2018",
+              "to": "dez de 2018",
+              "summary": "Architecture: MVP and MVC\nVersion control: Git\nWorkflow: Git Flow\nFrameworks: Card IO, QR Code Reader, Auto Layout, UIKit, Alamofire\nInternal and external tests using Test Flight\nPublish on App Store"
+            }
+          ]
+        }
+      ],
+      "academics": [
+        {
+          "institution": "FIAP",
+          "degree": "Pós-graduação Lato Sensu - MBA",
+          "course": "Mobile Development",
+          "from": "set de 2022",
+          "to": "set de 2023"
+        },
+        {
+          "institution": "Fatec Campinas",
+          "degree": "Tecnólogo",
+          "course": "Analista e Desenvolvedor de Sistemas",
+          "from": "2013",
+          "to": "2021"
+        }
+      ]
+    }
+  ]
+}

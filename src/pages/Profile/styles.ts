@@ -1,152 +1,163 @@
 import styled from "styled-components";
-import background from "../../assets/images/background.jpg";
 
-const Image = styled.img`
-  height: 90vh;
-  margin-top: 10vh;
+const Container = styled.div`
+  background-color: lightgrey;
+  height: 100%;
 `;
 
-const RoundImage = styled.img<ImageStylesProps>`
-  height: 500px;
-  border-radius: 50%;
-  margin-right: -4rem;
-
-  margin-top: ${(props) => props.margin && "5vh"};
-`;
-
-const CardContainer = styled.div`
+const Body = styled.div`
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
-
-  div {
-    background-color: #25392d;
-    padding: 1rem 2rem;
-    color: white;
-    border: 0.1rem solid black;
-    border-radius: 2rem;
-    width: auto;
-    font-size: 2rem;
-    margin: 0.5rem 0.5rem;
-  }
-
-  div:hover {
-    background-color: transparent;
-    color: black;
-  }
-`;
-
-const Button = styled.button`
-  font-family: "Oswald", sans-serif;
-  background-color: #25392d;
-  padding: 1rem;
-  color: white;
-  font-size: 3.5rem;
-  border-radius: 2rem;
-  margin-top: 10vh;
-  box-shadow: 1rem 1rem 1rem rgba(205, 205, 205, 0.9);
-  cursor: pointer;
-
-  &:hover {
-    box-shadow: none;
-  }
-`;
-
-const TextButton = styled.button`
-  @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-
-  font-family: "Oswald", sans-serif;
-  width: 200px;
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  font-weight: 600;
-  color: #25392d;
-  font-size: 3rem;
-  margin: 2rem 0;
-  cursor: pointer;
-`;
-
-const IconsContainer = styled.div`
-  margin-top: 2rem;
-  display: flex;
   justify-content: center;
-
-  a {
-    padding-bottom: 1rem;
-  }
-
-  & a:not(:last-child) {
-    margin-right: 4rem;
-  }
 `;
 
-const DetailsContainer = styled.div`
+const BodyContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 900px;
+  justify-content: space-between;
+  align-items: flex-start;
+`;
+
+const ImageContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 70%;
-  height: 100vh;
-  padding-bottom: 2vh;
+  width: 30%;
+  padding: 1em;
+  border: 0.05em solid silver;
+  background-color: whitesmoke;
+`;
 
-  p {
-    margin: 0 1rem;
-    font-size: 2.2rem;
-  }
-
-  h1 {
-    font-family: "Oswald", sans-serif;
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    margin-top: 5rem;
-    text-align: center;
-  }
+const Image = styled.img`
+  border-radius: 50%;
+  width: 100%;
+  margin-bottom: 1em;
 `;
 
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  width: 65%;
+  padding: 1em;
+  border: 0.05em solid silver;
+  background-color: whitesmoke;
+  margin-bottom: 1em;
 
-  & h1 {
-    font-family: "Oswald", sans-serif;
-    font-size: 15rem;
-    font-weight: 800;
-    margin: 10vh 0 5rem 0;
-    color: #25392d;
+  h1:first-child,
+  h1:last-of-type {
+    margin-top: 0em;
   }
 
-  & p {
-    font-size: 4rem;
-  }
-
-  & button {
-    width: 100%;
-    justify-self: center;
+  h1 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
   }
 `;
 
-const Container = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+const Name = styled.p`
+  font-weight: bold;
+`;
 
+const SubTitle = styled.p`
+  font-style: italic;
+  font-size: 0.9em;
+`;
+
+const IconsContainer = styled.div`
+  margin-top: 1rem;
+  width: 4.2em;
+  display: flex;
+  justify-content: space-between;
+`;
+
+const LanguageTitle = styled.p`
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 0.7em;
+`;
+
+const BorderTextContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+`;
+
+const BorderText = styled.div`
+  font-size: 0.7em;
+  border: 0.05em solid silver;
+  border-radius: 0.5em;
+  background-color: lightgrey;
+  padding: 0.3em 0.6em;
+  margin: 0.5em 0.5em 0 0;
+`;
+
+const Button = styled.a`
+  width: 100%;
+  border: none;
   display: flex;
   justify-content: center;
-  align-items: space-between;
-  background-image: url(${background});
-  background-size: cover;
-  overflow: scroll;
-  overflow-x: hidden;
+  align-items: center;
+  text-decoration: none;
+  background-color: black;
+  height: 2em;
+  color: white;
+  cursor: pointer;
+  margin-top: 1em;
+
+  :hover {
+    background-color: dimgray;
+  }
+`;
+
+const Text = styled.p`
+  font-size: 0.8em;
+`;
+
+const BoldText = styled.p`
+  font-weight: bold;
+  font-size: 0.9em;
+`;
+
+const BoldGreyText = styled.p`
+  color: dimgray;
+  font-weight: bold;
+  font-size: 0.9em;
+`;
+
+const ItalicText = styled.p`
+  font-style: italic;
+  font-size: 0.8em;
+  margin-bottom: 0.7em;
+`;
+
+const SmallText = styled.p`
+  font-size: 0.7em;
+  margin-bottom: 1em;
+`;
+
+const JobsContainer = styled.div`
+  margin-left: 1em;
 `;
 
 export {
-  Image,
   Container,
-  Button,
+  Body,
+  BodyContainer,
+  ImageContainer,
+  Image,
   TextContainer,
+  Name,
+  SubTitle,
   IconsContainer,
-  RoundImage,
-  CardContainer,
-  TextButton,
-  DetailsContainer,
+  LanguageTitle,
+  BorderTextContainer,
+  BorderText,
+  Button,
+  Text,
+  BoldText,
+  BoldGreyText,
+  ItalicText,
+  SmallText,
+  JobsContainer,
 };

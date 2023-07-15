@@ -1,138 +1,127 @@
-import { useState } from "react";
-import profile_picture from "../../assets/images/profile_picture.png";
-import dog from "../../assets/images/dog.png";
-import couple from "../../assets/images/couple.jpg";
-import trip from "../../assets/images/trip.png";
+import { Header } from "../../components";
 import {
+  Body,
+  BodyContainer,
   Button,
-  CardContainer,
   Container,
-  DetailsContainer,
   IconsContainer,
   Image,
-  RoundImage,
-  TextButton,
+  ImageContainer,
+  BorderTextContainer,
+  BorderText,
+  LanguageTitle,
+  SubTitle,
+  Text,
   TextContainer,
+  BoldText,
+  ItalicText,
+  SmallText,
+  Name,
+  JobsContainer,
+  BoldGreyText,
 } from "./styles";
-import {
-  LinkedIn,
-  GitHub,
-  Instagram,
-  KeyboardArrowLeft,
-} from "@mui/icons-material";
-import Collapse from '@mui/material/Collapse';
+import { LinkedIn, GitHub } from "@mui/icons-material";
+import { useParams } from "react-router-dom";
+import data from "../../data/freelancers.json";
 
 function Profile() {
-  const [details, setDetails] = useState(false);
-
-  const skills = [
-    "Javascript",
-    "Typescript",
-    "HTML5",
-    "CSS3",
-    "React",
-    "React Native",
-    "Styled-components",
-    "Node.js",
-    "NestJS",
-    "Express.js",
-    "API REST",
-    "OpenAPI",
-    "JSON",
-    "Jest",
-    "React Testing Library",
-    "Detox",
-    "Git",
-    "MongoDB",
-    "MockServer",
-    "Firebase",
-    "Swift",
-    "Agile methodologies",
-    "Teamwork",
-    "Communication",
-    "Public speaking",
-  ];
+  const { id } = useParams();
+  const freelancer = data.freelancers.find(
+    (freelancer) => freelancer.id === parseInt(id || "")
+  );
 
   return (
-    <>
-      <Collapse in={!details}>
-        <Container>
-          <Image src={profile_picture} alt="profile" />
-          <TextContainer>
-            <div>
-              <h1>olá!</h1>
-              <p>meu nome é Ana Clara,</p>
-              <p>eu tenho 28 anos e</p>
-              <p>sou uma dev front-end</p>
-              <Button onClick={() => setDetails(true)}>
-                saiba mais sobre mim
-              </Button>
-            </div>
-            <IconsContainer>
-              <a
-                href={"https://www.linkedin.com/in/anaclaragf/"}
-                target="_blank"
-              >
-                <LinkedIn sx={{ color: "#000000", fontSize: "6rem" }} />
-              </a>
-              <a href={"https://github.com/anaclara-gf"} target="_blank">
-                <GitHub sx={{ color: "#000000", fontSize: "6rem" }} />
-              </a>
-              <a href={"https://www.instagram.com/anaclaragf/"} target="_blank">
-                <Instagram sx={{ color: "#000000", fontSize: "6rem" }} />
-              </a>
-            </IconsContainer>
-          </TextContainer>
-        </Container>
-      </Collapse >
-      <Collapse in={details}>
-        <Container>
-          <DetailsContainer>
-            <TextButton onClick={() => setDetails(false)}>
-              <KeyboardArrowLeft sx={{ color: "#25392d", fontSize: "4rem" }} />
-              VOLTAR
-            </TextButton>
-            <p>
-              Formada em Arquitetura e Urbanismo, no meio da pandemia fiz
-              transição de carreira para desenvolvimento front-end. Em abril de
-              2021 concluí o curso da Laboratória Brasil, um bootcamp intensivo
-              de seis meses no qual aprendi JavaScript, HTML, CSS, React.js,
-              NodeJS, etc.
-            </p>
-            <p>
-              Atualmente estou trabalhando com desenvolvimento fullstack com
-              JavaScript/TypeScript. No meu dia-a-dia, utilizo o React.js para o
-              front-end, o React Native para o desenvolvimento mobile híbrido, o
-              NestJS (framework Node.js) para o backend, Jest e React Testing
-              Library para testes unitários, Detox para testes E2E e
-              versionamento com Git. Já trabalhei com Redux, MongoDB, Firebase,
-              Mockserver, Figma, entre outros. Acredito fortemente no
-              aprendizado contínuo para meu desenvolvimento pessoal, então
-              atualmente estou cursando uma pós em desenvolvimento mobile para
-              aprofundar meu conhecimento e aprender novas linguagens.
-            </p>
-            <p>
-              Pessoalmente, eu amo passar tempo com meu cachorro, um pug chamado
-              Bacon, e com meu marido. Além disso, minha maior paixão é viajar e
-              conhecer lugares novos.
-            </p>
-            <IconsContainer>
-              <RoundImage src={dog} alt="dog" />
-              <RoundImage src={couple} alt="couple" margin={true} />
-              <RoundImage src={trip} alt="trip" />
-            </IconsContainer>
-            <div>
-              <h1>Skills</h1>
-              <CardContainer>
-                {skills.map((skill, index) => (
-                  <div key={index}>{skill}</div>
+    <Container>
+      <Header />
+      {freelancer ? (
+        <Body>
+          <BodyContainer>
+            <ImageContainer>
+              <Image src={freelancer.imageURL} alt="profile" />
+              <Name>{freelancer.name}</Name>
+              <SubTitle>{freelancer.level}</SubTitle>
+
+              <IconsContainer>
+                <a href={freelancer.linkedinURL} target="_blank">
+                  <LinkedIn
+                    sx={{
+                      color: "#000000",
+                      fontSize: "2em",
+                    }}
+                  />
+                </a>
+                <a href={freelancer.githubURL} target="_blank">
+                  <GitHub
+                    sx={{
+                      color: "#000000",
+                      fontSize: "1.8em",
+                    }}
+                  />
+                </a>
+              </IconsContainer>
+
+              <LanguageTitle>Idiomas</LanguageTitle>
+              <BorderTextContainer>
+                {freelancer.languages.map((language) => (
+                  <BorderText key={language}>{language}</BorderText>
                 ))}
-              </CardContainer>
-            </div>
-          </DetailsContainer>
-        </Container>
-      </Collapse >
-    </>
+              </BorderTextContainer>
+              <Button
+                href={`mailto:${freelancer.email}?subject=Contrate-me&body=Vi seu perfil no site freelancer e gostaria de te contratar para um projeto!`}
+              >
+                Contrate agora
+              </Button>
+            </ImageContainer>
+            <TextContainer>
+              <h1>Sobre</h1>
+              <Text>{freelancer.about}</Text>
+              <h1>Competências</h1>
+              <BorderTextContainer>
+                {freelancer.skills.map((skill) => (
+                  <BorderText key={skill}>{skill}</BorderText>
+                ))}
+              </BorderTextContainer>
+              <h1>Experiência</h1>
+              {freelancer.experiences.map((experience, index) => (
+                <div key={experience.company}>
+                  <BoldText>
+                    {index + 1}. {experience.company}
+                  </BoldText>
+                  <ItalicText>
+                    {experience.place} | {experience.time}
+                  </ItalicText>
+                  <JobsContainer>
+                    {experience.jobs.map((job) => (
+                      <div key={job.level}>
+                        <BoldGreyText>{job.level}</BoldGreyText>
+                        <ItalicText>
+                          {job.from} - {job.to}
+                        </ItalicText>
+                        {job.summary && <SmallText>{job.summary}</SmallText>}
+                      </div>
+                    ))}
+                  </JobsContainer>
+                </div>
+              ))}
+              <h1>Formação acadêmica</h1>
+              {freelancer.academics.map((academic) => (
+                <div key={academic.institution}>
+                  <BoldText>{academic.institution}</BoldText>
+                  <Text>
+                    {academic.degree}, {academic.course}
+                  </Text>
+                  <ItalicText>
+                    {academic.from} - {academic.to}
+                  </ItalicText>
+                </div>
+              ))}
+            </TextContainer>
+          </BodyContainer>
+        </Body>
+      ) : (
+        <p>Usuário não encontrado</p>
+      )}
+    </Container>
   );
 }
 

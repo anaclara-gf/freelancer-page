@@ -1,11 +1,11 @@
-import { Profile } from "./pages";
+import { Router } from "./routes";
 import { GlobalStyles } from "./styles/globalStyles";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <Profile />
+      <Router />
     </>
   );
 }

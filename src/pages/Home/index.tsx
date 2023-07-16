@@ -7,10 +7,8 @@ import {
   CardContainer,
 } from "./styles";
 import { useAppSelector } from "../../store/hooks";
-import { useNavigate } from "react-router-dom";
 
 function Home() {
-  const navigate = useNavigate();
   const freelancers = useAppSelector((state) => state.data.freelancers);
   const searchInput = useAppSelector((state) => state.data.searchInput);
 

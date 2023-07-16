@@ -19,6 +19,12 @@ const BodyContainer = styled.div`
   max-width: 900px;
   justify-content: space-between;
   align-items: flex-start;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -28,12 +34,22 @@ const ImageContainer = styled.div`
   padding: 1em;
   border: 0.05em solid silver;
   background-color: whitesmoke;
+
+  @media screen and (max-width: 500px) {
+    width: 90%;
+    margin-bottom: 1em;
+    align-items: center;
+  }
 `;
 
 const Image = styled.img`
   border-radius: 50%;
   width: 100%;
   margin-bottom: 1em;
+
+  @media screen and (max-width: 500px) {
+    max-width: 200px;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -54,15 +70,27 @@ const TextContainer = styled.div`
     margin-top: 1em;
     margin-bottom: 0.5em;
   }
+
+  @media screen and (max-width: 500px) {
+    width: 90%;
+  }
 `;
 
 const Name = styled.p`
   font-weight: bold;
+
+  @media screen and (max-width: 500px) {
+    text-align: center;
+  }
 `;
 
 const SubTitle = styled.p`
   font-style: italic;
   font-size: 0.9em;
+
+  @media screen and (max-width: 500px) {
+    text-align: center;
+  }
 `;
 
 const IconsContainer = styled.div`
@@ -82,6 +110,10 @@ const BorderTextContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+
+  @media screen and (max-width: 500px) {
+    justify-content: center;
+  }
 `;
 
 const BorderText = styled.div`

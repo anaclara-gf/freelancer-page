@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
-const HeaderBackground = styled.div`
+interface HeaderBackgroundProps {
+  smallWindow: boolean;
+}
+
+interface Button {
+  setVisibility: any;
+}
+
+const HeaderBackground = styled.div<HeaderBackgroundProps>`
   width: 100%;
   height: 3em;
   background-color: black;
@@ -8,6 +16,12 @@ const HeaderBackground = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 1em;
+
+  ${(props) =>
+    props.smallWindow &&
+    `
+      margin-bottom: 2.875em;
+    `}
 `;
 
 const HeaderContainer = styled.div`
@@ -27,6 +41,13 @@ const Title = styled.p`
 const InputContainer = styled.form`
   display: flex;
   width: 250px;
+
+  @media screen and (max-width: 500px) {
+    position: absolute;
+    top: 3em;
+    left: 0;
+    width: 100%;
+  }
 `;
 
 const Input = styled.input`

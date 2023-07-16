@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   HeaderBackground,
@@ -19,8 +19,17 @@ import {
 
 function Header() {
   const [name, setName] = useState("");
+  const [smallWindow, setSmallWindow] = useState(false);
+  const [input, setInput] = useState(true);
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    if (window.innerWidth < 500) {
+      setSmallWindow(true);
+      setInput(false);
+    }
+  }, []);
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
@@ -35,7 +44,7 @@ function Header() {
   };
 
   return (
-    <HeaderBackground>
+    <HeaderBackground smallWindow={input && smallWindow}>
       <HeaderContainer>
         <Title
           onClick={() => {
@@ -45,17 +54,24 @@ function Header() {
         >
           Freelancer
         </Title>
-        <InputContainer onSubmit={(e) => handleSubmit(e)}>
-          <Input
-            type="text"
-            value={name}
-            placeholder="Buscar freelancers pelo nome"
-            onChange={(e) => setName(e.target.value)}
-          />
-          <Button type="submit">
+        {input && (
+          <InputContainer onSubmit={(e) => handleSubmit(e)}>
+            <Input
+              type="text"
+              value={name}
+              placeholder="Buscar freelancers pelo nome"
+              onChange={(e) => setName(e.target.value)}
+            />
+            <Button type="submit">
+              <Search sx={{ fontSize: "1em" }} />
+            </Button>
+          </InputContainer>
+        )}
+        {smallWindow && (
+          <Button onClick={() => setInput(!input)}>
             <Search sx={{ fontSize: "1em" }} />
           </Button>
-        </InputContainer>
+        )}
       </HeaderContainer>
     </HeaderBackground>
   );

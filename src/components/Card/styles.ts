@@ -15,11 +15,21 @@ const CardContainer = styled.div`
   :hover {
     box-shadow: 0 0 1.5em 0 silver;
   }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    height: auto;
+  }
 `;
 
 const Image = styled.img`
   border-radius: 50%;
   height: 10em;
+
+  @media screen and (max-width: 500px) {
+    align-self: center;
+    margin-bottom: 1em;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -27,6 +37,11 @@ const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
+
+  @media screen and (max-width: 500px) {
+    margin-left: 0;
+    align-items: center;
+  }
 `;
 
 const CardTitle = styled.p`
